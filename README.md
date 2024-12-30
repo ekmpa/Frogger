@@ -34,3 +34,5 @@ The frog agent is implemented with an HTN with composite tasks for crossing the 
 - $m_6 = \texttt{!}m_{3,4,5}$ & $\texttt{pre(MoveForward)}$
 - $m_7$ = just executed a move other than digesting a fly (i.e., leaping) 
 
+**Decision-making:**
+The decision making process makes the frog prioritize its goal of getting to the goal, while also accounting for a second goal: getting within radius of the fly to eat it. This was decided as, depending on the parameters (specifically the range of values within which the cars' speed and number are spawned in), some levels are impossible without leaping - it offers a great advantage to the frog and thus having the frog consider this goal as well generally increase the success rate.
